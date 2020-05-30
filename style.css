@@ -1,0 +1,301 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+li,label,input,button,p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h4,h5 {
+  font-size: 2.8rem;
+}
+a {
+  color: white;
+}
+button {
+  padding: 1.6rem 4.8rem;
+  background: #4c6e97;
+  color: white;  
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.07rem;
+  border: none;
+  opacity: 0.8;
+  font-size: 1.8rem;
+  transition: background 0.3s ease-in-out;
+}
+button:hover {
+  background: #182d47;
+
+}
+
+/*  Nav section*/
+
+ .wrap {
+   background-color: #131c27 ;
+   color: white; 
+   position: sticky;
+   top: 0;
+   z-index: 99;
+ }
+.header {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  flex-wrap: wrap;
+  
+}
+.header ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1 1 40rem;
+  min-width: 10vh;
+} 
+.logo {
+  flex: 2 1 40rem;
+  font-family: 'Pattaya', sans-serif;
+  font-weight: 400;
+}
+
+.hero {
+  min-height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent),url('/img/landing-page.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.hero h3 {
+  margin: 4.4rem;
+}
+
+/* LOCATIONS */
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url('/img/new-york-page.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.locations-head {
+  width: 90%;
+  margin: auto;
+} 
+.locations-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+}
+.locations-head h3 {
+  padding: 1rem 0rem;
+}
+
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 70%;
+}
+.moving-cloud-1 {
+animation: cloudAnimation 3s infinite alternate ease-in-out;
+opacity: 0.8;
+
+}
+.moving-cloud-2 {
+top: 20%;
+z-index: -2;
+opacity: 0.5;
+animation: cloudAnimation 3s infinite alternate ease-in-out;
+}
+
+@keyframes cloudAnimation{
+  from {
+    transform: translate(10%, -10%)
+  }
+  to {
+    transform: translate(0%, 0%)
+  }
+}
+
+/* BENEFITS */
+
+.benefits-head {
+  background: #343c44;
+  padding: 2rem;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.benefits-head h3 {
+  padding: 1rem;
+}
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  flex: 1 1 25rem;
+  min-height: 40vh;
+  margin: 2rem 3rem;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem; */
+  text-align: center;
+  box-shadow: -2px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.card-icon {
+  background: #131c27;
+}
+.card img {
+  max-width: 15%;
+  margin: 2rem;
+}
+
+.card h4,
+.card p {
+  padding: 1rem;
+  line-height: 1.8;
+}
+
+
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url('/img/contact-mountain.png');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-wrapper {
+  background: rgba(19 ,28, 39, 0.8);
+  width: 55%;
+  color: white;
+  border-radius: 10px;
+}
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+.name-form,
+.email-form{
+  text-align: center;
+  padding: 2rem;
+}
+.form-wrapper label {
+  margin: 0rem 2rem;
+}
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.form-wrapper input {
+  padding: 1rem 2rem;
+}
+
+footer {
+  color: white;
+  background: rgba(19 ,28, 39, 1);
+}
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: nowrap;
+}
+footer h5 {
+  flex: 1 1 40rem;
+}
+footer ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* MEDIA QUERYS*/
+@media screen and (max-width: 936px) {
+    html {
+      font-size: 45%;
+    }
+    .header {
+      text-align: center;
+    }
+    .logo {
+      padding: 2rem;
+    }
+    .cloud {
+      height: 70%;
+      pointer-events: none;
+    }
+    .locations-head h3 {
+      background: rgba(19 ,28, 39, 0.7);
+      -webkit-text-fill-color: white;
+      padding: 2rem 0rem;
+    }
+    .locations-head {
+      text-align: center;
+    }
+    .form-wrapper {
+      width: 100%;
+    }
+    footer {
+      text-align: center;
+    }
+    footer h5 {
+      padding-bottom: 3rem;
+    }
+   
+} 
